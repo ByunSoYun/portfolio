@@ -1,0 +1,298 @@
+<div  style="background-color: #F2F3F7 ; width: 1300px; margin: auto; padding: 10px ;padding-left:50px; font-family: '맑은고딕'; margin-top:50px;margin-bottom: 100px;">
+  <h2 style="margin-top: 50px; font-weight: normal;">파일 입출력 기반의 데이터 처리 자바 콘솔 프로젝트</h2>
+  <!-- <p class="sample-text"> -->
+    <div style=" width: 800px; display: inline-block; margin-top: 30px; " >
+
+    <h3 style="display: inline;"><strong>프로젝트명 :</strong></h3>
+    <h3 style="display: inline;"><strong>기업 전산 관리 시스템 (sist)</strong></h3>
+    <br>
+    <div style="margin-top: 20px; "></div>
+    <p> - 회사 직원들의 인적사항, 일정, 급여 등을 한눈에 확인할 수 있고<br></p>
+    <p>&nbsp&nbsp기존의 전산 관리 시스템(연차, 게시판, 스케줄 등)과 유사한 시스템을 이용하는 프로그램<br></p>
+  
+      <br>
+      <div style="margin-top: 30px; ">
+    <h3 style="display: inline;"><strong >개발환경 및 순서</strong><br> </h3>
+    <br>
+  
+
+    <div>-  개발기간: 2021/05/03 ~ 2021/05/11</div>
+    <br>
+    <div>-  개발 툴: Eclipse </div>
+    <br>
+    <div>-  사용언어: Java </div>
+    <br>
+
+    <div>-  순서 : 기획서 > 기능명세서 > 화면설계 > 소스 구현 > 자바 Doc > 최종요약서</div>
+  </div>
+  </div>
+
+  <img src="images/lllogin.png" style="width: 400px; height: 230px; margin-bottom: 50px;"> 
+  <br>
+  <br>
+    <br>
+    <div style="margin-top: 30px; ">
+      <h3 style="display: inline;"><strong>구현 목표</strong></h3><br>
+    <br>
+    <div>   - 기존의 전산 관리 시스템 다른 기능을 추가하여 차별성을 높이고, 보다 나은 서비스를 제공한다.
+    </div>
+   <br>
+   <div>  - 근태 관리나 연차 신청, 혹은 직원들을 위한 커뮤니티 게시판을 한번에 이용할 수 있기 때문에 기존의 전산 관리 시스템보다 더 편리한 환경을 제공한다.
+  </div>
+ <br> 
+  <div>  - 기존에는 오프라인에서만 이용할 수 있었던 환경이었으나, 온라인으로 이용할 수 있게 만듦으로써 직원들에게 편의성을 제공한다.
+<br>
+</div>
+
+  <br>
+  <br>
+  <div style="margin-top: 30px; ">
+    <h3 style="display: inline;"><strong>담당업무 구현화면 및 설명</strong></h3><br>
+ 
+    <!-- 글+그림 -->
+    <br>
+    <div >
+      <h4 >- 로그인 화면 구성</h4>
+      <div>
+        <div >
+          <img src="images/nayoon.png" style="width: 505px; height: 300px;"></a>
+      
+          <br>
+          <p>
+            - 직원 및 관리자의 로그인창이며 직원이 자신의 회원번호를 입력하여 로그인을 한 후,<br>
+            &nbsp&nbsp"000님 로그인이 완료되었습니다."라는 메시지와 회원 초기화면을 확인할 수 있는 화면입니다.<br> <br>
+
+            - 사용기술: BufferedReader, ArrayList, BufferedWriter<br> <br>
+
+            - 직원 더미에 있는 직원번호 =아이디 / 전화번호 뒷번호 = 비밀번호 조건 결과값이 true값이여야만(일치해야만) 로그인이 됩니다. </p>
+         
+            
+          </p>
+        </div>
+      </div>
+    </div>
+  
+    <div style="margin-top: 50px;"><h3>[회원]</h3></div>
+    <div>
+     
+      <h4>- 근태 확인</h4>
+      <div>
+        <div>
+      <img src="images/commutete.png" style="width: 250px; height: 130px;">
+      <img src="images/commute1.png" style="width: 250px; height: 130px;">
+       
+          <br>
+          <p>
+            - 직원이 로그인을 하고 근태 관리 메뉴에 들어가게 되면 나오는 화면입니다.<br>
+            &nbsp&nbsp해당화면에서 3.근태 확인으로 이동시 해당 월의 근태를 확인 할 수 있습니다.<br> <br>
+
+            - 사용기술: BufferedReader, ArrayList, BufferedWriter<br> <br>
+
+            - 출퇴근 시간을 체크하면 now.get() 메소드를 이용해 출퇴근시간이 기록되는 출퇴근더미를 통해<br>
+            &nbsp&nbsp지각/조퇴/근무일수의 숫자를 카운트해주는 기능입니다.
+            
+             </p>
+         
+            
+          </p>
+        </div>
+      </div>
+
+      <br>
+      <div>
+        <h4>- 서류 서명</h4>
+        <div>
+          <div>
+        <img src="images/document.png"  style="width: 505px; height: 200px;">
+   
+          
+            <br>
+            <p>
+
+              - 직원들이 자신의 지각 혹은 조퇴 기록을 확인하고 서명을 할 수 있는 화면입니다.<br><br>
+
+              - 사용기술: BufferedReader, ArrayList, BufferedWriter<br> <br>
+              - 근태관리에서 지각이나 조퇴인 데이터가 생기면 직원서류서명더미에 데이터를 저장하고<br>
+              &nbsp&nbsp이를 통해 로그인된 해당 직원의 지각,조퇴 데이터만 출력하여 직원이 서명을 하고<br>
+              &nbsp&nbsp서명을 안하거나 서명이 잘못된 데이터(해당 직원의 이름으로 입력되지 않는 경우)는<br>
+              &nbsp&nbsp직원서류서명더미에 남겨 관리자가 관리하게 할 수 있는 기능입니다
+           
+            </p>
+           
+              
+         
+          </div>
+        </div>
+
+    </div>
+
+    <br>
+    <div>
+      <h4>- 코로나 자가진단</h4>
+      <div>
+        <div>
+      <img src="images/cocovid.png"  style="width: 505px; height: 200px;">
+ 
+        
+          <br>
+          <p>
+
+            - 코로나 자가진단의 질문의 목록들이 출력되고 직원이 대답을 입력하는 화면입니다.<br><br>
+
+            - 사용기술: BufferedReader, ArrayList, BufferedWriter<br> <br>
+            - 코로나 자가진단 문항 데이터가 저장된 파일더미를 통해 질문을 가져와 직원이 y(Y) 또는 n(N)으로 입력하게 합니다.<br>
+            &nbsp&nbsp유효성검사로 y,n로 답해지지않으면 재귀메소드로 다시 질문으로 돌아가 질문이 반복되게 됩니다.<br>
+            &nbsp&nbsp코로나 자가진단이 끝난후 모든 데이터들은 관리자가 볼 수 있게 COVID완료 더미에 저장돼서<br>
+            &nbsp&nbsp관리자가 직원들의 상태를 확인을 할 수 있는 기능입니다.
+         
+          </p>
+         
+            
+       
+        </div>
+      </div>
+
+  </div>
+
+  <br>
+  <div>
+    <h4>- 급여명세서</h4>
+    <div>
+      <div>
+        <img src="images/retire111.png"  style="width:250px; height: 350px;" style="display: inline-block;">
+        <img src="images/retire2.png"  style="width:250px; height: 350px;">
+
+      
+        <br>
+        <p>
+        
+          -  직원이 월별로 자신이 받게 되는 급여를 상세하게 출력하는 화면입니다.<br><br>
+
+          - 사용기술: BufferedReader, ArrayList<br> <br>
+          -  직원 더미의 데이터를 통해 개인정보, 직책수당,기본급을 출력할 수 있고<br>
+          &nbsp&nbsp출퇴근 더미로 야근수당,출근 횟수를 통해 식대를 계산해 지난달의 급여명세서를 확인할 수 있는 기능입니다.<br>
+      
+       
+        </p>
+       
+          
+     
+      </div>
+    </div>
+
+</div>
+
+<div>
+  <br>
+  <h4>- 퇴직금</h4>
+  <div>
+    <div>
+      <img src="images/retire.png"  style="width:505px; height: 240px;">
+
+    
+      <br>
+      <p>
+      
+        -  직원의 정보를 입력하면 예상퇴직금과 평균 임금을 출력하여 보여주는 화면입니다.<br><br>
+
+        - 사용기술: BufferedReader, ArrayList, BufferedWriter<br> <br>
+        -  직원의 재직일수 얻기 위해서 tick값을 이용해 3개월간 재직일수를 구해줍니다.<br>
+        &nbsp&nbsp직원이 입력한 값과 재직일 수를 통해 퇴직금계산식으로 예상 퇴직금을 출력해주는 기능입니다.<br>
+    
+     
+      </p>
+     
+        
+   
+    </div>
+  </div>
+
+  <div style="margin-top: 50px;"><h3>[관리자]</h3></div>
+  <div>
+   
+    <h4>- 결제 서류-근태 확인</h4>
+    <div>
+      <div>
+        <img src="images/documentno.png"  style="width: 505px; height: 200px;">
+ 
+     
+        <br>
+
+        <p>
+          - 관리자가 확인할 수 있게 서명이 제대로 완료되지 않은 데이터 목록들을이 출력되는 화면입니다.<br>
+          
+
+          - 사용기술: 사용기술: BufferedReader, ArrayList<br> <br>
+
+          - 직원서류더미에 남겨진 서명이 잘못되거나 서명이 안된 데이터들을 관리자가 확인 할 수 있는 기능입니다.<br>
+        
+          
+           </p>
+       
+          
+        </p>
+      </div>
+    </div>
+
+</div>
+
+<div>
+  <br>
+  <h4>- 결제 서류-코로나 자가진단 확인</h4>
+  <div>
+    <div> 
+      <img src="images/cococo.png" style="width: 200px; height: 150px;">
+      <img src="images/covid2.png" style="width: 300px; height: 150px;">
+       
+
+      
+      <br>
+      <p>
+      
+        -   코로나 자가진단의 결과에 이상이 있는 직원의 목록과 해당 직원의 질문결과를 출력해주는 화면입니다.<br><br>
+
+        -  사용기술: BufferedReader, ArrayList<br> <br>
+        -  코로나 자가진단이 끝난 모든 직원들의 데이터가 저장된 COVID완료더미에서 이상이 있는 (n을 포함한) 답변을 가진<br>
+        &nbsp&nbsp직원들의 목록을 뽑아와 출력합니다. 그리고 그 직원 목록에서 열람을 원하는 직원의 직원번호를 입력하면<br>
+        &nbsp&nbsp해당 직원 코로나 자가진단의 모든 질문의 답변을 볼 수 있게 하는 기능입니다.<br>
+
+     
+      </p>
+     
+        
+   
+    </div>
+  </div>
+
+  <div style="margin-top: 50px; ">
+    <br>
+    <h3 style="display: inline;"> <strong >프로젝트를 통해 느낀점</strong></h3><br>
+ 
+  
+
+    <p>
+      
+      -  자바 프로그래밍에서 대표적인 IDE인 eclipse를 사용해 기업 전산 관리 시스템을 구현했습니다.      <br>
+      &nbsp&nbsp수업 때 배운 이론들을 실제 코드로 구현하는 재미도 느끼게됐고 산출물이 원하는대로 잘 나오면 성취감도 느낄 수 있었습니다.<br>
+      &nbsp&nbsp프로젝트 초반에 요구분석을 작성했고 이를 보며 화면 설계를 하였습니다.<br>
+      &nbsp&nbsp프로젝트 순서에 맞게 순차적으로 진행하면서 마감제출 시간 전에 프로젝트를 끝낼 수 있었습니다.<br>
+      &nbsp&nbsp프로젝트 진행중 막히는 부분이나 오류가 해결이 안되는 경우도 있었습니다.<br>
+      &nbsp&nbsp이런 경우에는 같은 팀원들에게 코드를 보여주며 바로 피드백을 받았습니다.<br>
+      &nbsp&nbsp오류를 혼자 계속 찾는것보다 팀원들과 보는것이 시간을 단축시켜준다는것을 느낄 수 있었습니다.<br>
+      &nbsp&nbsp이렇게 코드를 공유하게되면서 코드의 가독성 또한 매우 중요하다는 것을 느꼈고 팀원들간에 커뮤니케이션이 중요하다는 것을 다시한번 깨닫게됐습니다.
+      <br>
+      &nbsp&nbsp마지막으로 각각의 담당업무를 다같이 합치면서 문제점을 해결해가며 완성도를 높였고 프로젝트를 마무리했습니다.
+      <br>
+
+    </p>
+
+    <br>
+    <br>
+    <br>
+
+  <h3 style="margin-left: 850px; ">마지막입니다. 끝까지 봐주셔서 감사합니다.</h3>
+  </div>
+
+
+  </div>
+</div>
